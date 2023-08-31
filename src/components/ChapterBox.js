@@ -10,6 +10,9 @@ const ChapterBoxContainer = styled.div`
   align-items: center;
   background-color: #605bff;
   color: #fff;
+  font-family: "SUIT";
+  font-size: 8px;
+  font-weight: 300;
   div:nth-child(1) {
     margin-top: 16px;
     font-size: 16px;
@@ -17,6 +20,7 @@ const ChapterBoxContainer = styled.div`
   div:nth-child(2) {
     margin-top: 10px;
     font-size: 24px;
+    font-weight: 600;
   }
   div:nth-child(3) {
     margin-top: 10px;

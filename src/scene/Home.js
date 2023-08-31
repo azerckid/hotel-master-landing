@@ -30,7 +30,6 @@ const HomeBoxContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: yellowgreen; */
 `;
 const HomeBox = styled.div`
   width: 100vw;
@@ -39,12 +38,15 @@ const HomeBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* background-color: yellowgreen; */
+  font-family: "SUIT";
+  font-size: 8px;
+  font-weight: 200;
 `;
 const ServiceBox = styled.div`
   width: 100vw;
   margin: 0px 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,26 +87,34 @@ const Home = () => {
         />
         <HomeBox>
           <ServiceBox>
-            <DesBox fontSize={12}>매출조회예시</DesBox>
-            <DepicBox depic={depic_03} width={342.8} height={108.13} />
-            <DesBox fontSize={12}>지출조회예시</DesBox>
-            <DepicBox depic={depic_04} width={342.8} height={108.13} />
-            <DepicBox depic={depic_05} width={375} height={280} />
-            <DesBox fontSize={20} style={{ marginBottom: 10 }}>
-              세금계산서를 편리하게
-            </DesBox>
-            <DesBox fontSize={12}>PC와 모바일에서 금액만 입력하면</DesBox>
-            <DesBox fontSize={12}>바로 간편하게 발행 완료!</DesBox>
+            <div>
+              <DesBox fontSize={12}>매출조회예시</DesBox>
+              <DepicBox depic={depic_03} width={342.8} height={108.13} />
+            </div>
+            <div style={{ marginTop: 20 }}>
+              <DesBox fontSize={12}>지출조회예시</DesBox>
+              <DepicBox depic={depic_04} width={342.8} height={108.13} />
+            </div>
+            <div>
+              <DepicBox depic={depic_05} width={375} height={280} />
+              <DesBox fontSize={20} style={{ marginBottom: 10 }}>
+                세금계산서를 편리하게
+              </DesBox>
+              <DesBox fontSize={12}>PC와 모바일에서 금액만 입력하면</DesBox>
+              <DesBox fontSize={12}>바로 간편하게 발행 완료!</DesBox>
+            </div>
           </ServiceBox>
           <ServiceBox>
-            <DepicBox depic={depic_06} width={375} height={280} />
-            <DesBox fontSize={20} style={{ marginBottom: 10 }}>
-              정산내역도 한눈에
-            </DesBox>
-            <DesBox fontSize={12} style={{ marginBottom: 4 }}>
-              PC와 모바일에서 금액만 입력하면
-            </DesBox>
-            <DesBox fontSize={12}>바로 간편하게 발행 완료!</DesBox>
+            <div style={{ marginBottom: 20 }}>
+              <DepicBox depic={depic_06} width={375} height={280} />
+              <DesBox fontSize={20} style={{ marginBottom: 10 }}>
+                정산내역도 한눈에
+              </DesBox>
+              <DesBox fontSize={12} style={{ marginBottom: 4 }}>
+                PC와 모바일에서 금액만 입력하면
+              </DesBox>
+              <DesBox fontSize={12}>바로 간편하게 발행 완료!</DesBox>
+            </div>
           </ServiceBox>
         </HomeBox>
         <ChapterBox

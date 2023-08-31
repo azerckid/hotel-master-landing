@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 
 import { createGlobalStyle } from "styled-components";
+import "./assets/fonts/font.css";
 
 const GlobalStyle = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -55,7 +56,7 @@ table {
 }
 body{
 	width: 100vw;
-  	font-family: 'Montserrat', sans-serif;
+  	font-family: 'SUIT', Heavy, ;
 }
 `;
 
